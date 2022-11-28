@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/options_background"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:paddingTop="@dimen/options_dialog_pt"
+    android:paddingLeft="@dimen/options_dialog_PlPbPr"
+    android:paddingBottom="@dimen/options_dialog_PlPbPr"
+    android:paddingRight="@dimen/options_dialog_PlPbPr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/options_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/options_text_size"
+            android:layout_marginStart="@dimen/options_text_ml"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/options_text_mb"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_close_dialog_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ib_dialog_description"
+            android:src="@drawable/ic_baseline_close_36"
+            android:background="?selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:dividerColor="@color/white"
+        android:layout_marginBottom="@dimen/options_dialog_PlPbPr"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/options_dialog_PlPbPr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_text_internet_savings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/options_menu_text_size" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_internet_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/options_switchMR"
+            android:theme="@style/SwitchCompatStyle"
+            android:checked="false"
+            android:textSize="@dimen/options_switchTextSize"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_about_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_app_details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/options_menu_text_size"
+        android:layout_marginBottom="@dimen/options_dialog_PlPbPr"/>
+    <TextView
+        android:id="@+id/tv_buy_more_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/options_menu_text_size"
+        android:textColor="@color/white"
+        android:text="@string/tv_buy_text"
+        android:layout_marginBottom="@dimen/options_dialog_PlPbPr"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_volume"
+            android:textSize="@dimen/options_menu_text_size"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SwitchCompatStyle"
+            android:checked="false"
+            android:layout_marginEnd="@dimen/options_switchMR"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

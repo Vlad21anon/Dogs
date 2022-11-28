@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="find_dog_text_size">30sp</dimen>
+    <dimen name="dog_text_size_lv">32dp</dimen>
+    <dimen name="dog_text_marginBottom_lv">4dp</dimen>
+    <dimen name="options_menu_text_size">32sp</dimen>
+    <dimen name="options_switchMR">24dp</dimen>
+    <dimen name="options_switchTextSize">24sp</dimen>
+    <dimen name="options_text_size">48sp</dimen>
+    <dimen name="options_text_ml">24dp</dimen>
+    <dimen name="options_text_mb">4dp</dimen>
+    <dimen name="options_dialog_pt">12dp</dimen>
+    <dimen name="options_dialog_PlPbPr">16dp</dimen>
+    <dimen name="purchases_text_size">32sp</dimen>
+    <dimen name="purchases_mini_text_size">24sp</dimen>
+    <dimen name="hint_count_text_size">24sp</dimen>
+    <dimen name="record_text_size">24sp</dimen>
+</resources>

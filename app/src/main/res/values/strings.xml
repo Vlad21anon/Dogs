@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DogAppV01</string>
+    <string name="start_level">Start quiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_text_back">BACK</string>
+    <string name="tv_buy_text">Buy more hint</string>
+    <string name="tv_app_details">About app...</string>
+    <string name="tv_text_internet_savings">Internet savings</string>
+    <string name="options_text">Options</string>
+    <string name="ib_dialog_description">close button</string>
+    <string name="tv_volume">Volume</string>
+    <string name="purchases">Purchases</string>
+    <string name="text1_buy_hint">+1000</string>
+    <string name="text2_buy_hint">+5000</string>
+    <string name="text3_buy_hint">+10000</string>
+    <string name="text1_buy_price">5,00 UAH</string>
+    <string name="text2_buy_price">19,00 UAH</string>
+    <string name="text3_buy_price">29,00 UAH</string>
+    <string name="close">Close</string>
+    <string name="record_lvl_text">Your record:</string>
+    <string name="splash_text">Welcome to Dog Application</string>
+</resources>

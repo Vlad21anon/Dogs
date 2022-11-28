@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_80"
+    android:orientation="vertical"
+    tools:context=".screens.QuizFragment">
+
+    <include
+        android:id="@+id/round_toolbar"
+        layout="@layout/round_toolbar" />
+    <TextView
+        android:id="@+id/tv_record_lvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_40"
+        android:textSize="@dimen/record_text_size"
+        android:text="@string/record_lvl_text"
+        android:paddingStart="32dp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/tv_find_dog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:text="Find ''DOG''"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/find_dog_text_size"
+        tools:ignore="HardcodedText" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:orientation="horizontal" >
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog1" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog2" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog3" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog4" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog5" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog6" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog7" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog8" />
+        <ImageView style="@style/quiz_tv_style" android:id="@+id/iv_dog9" />
+
+    </GridLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_end_game"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="12dp"
+        android:paddingRight="4dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_to_docs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:background="@drawable/btn_start_lvl_style"
+            android:layout_marginBottom="12dp"
+            android:text="docs"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_repeat"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_start_lvl_style"
+            android:text="Repeat"
+            android:textSize="32dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn_start_lvl_style"
+            android:text="share"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
